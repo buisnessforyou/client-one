@@ -85,3 +85,127 @@ button {
 input, textarea {
   font-family: inherit;
 }
+
+/* ============================================================
+   PART 2 — TYPOGRAPHY & SHARED UTILITIES
+   ============================================================ */
+
+/* --- Eyebrow label --- */
+.eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--warm-brown);
+  margin-bottom: 16px;
+}
+
+.eyebrow--gold {
+  color: var(--gold-light);
+}
+
+/* --- Section titles --- */
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 4.5vw, 54px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--charcoal);
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--warm-brown);
+}
+
+.section-title--light {
+  color: var(--white);
+}
+
+.section-title--light em {
+  color: var(--gold-light);
+}
+
+/* --- Section subtitle --- */
+.section-sub {
+  font-size: clamp(15px, 1.6vw, 17px);
+  color: rgba(44, 36, 32, 0.6);
+  line-height: 1.75;
+  margin-top: 16px;
+}
+
+/* --- Shared section header block --- */
+.section-header {
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto clamp(48px, 6vw, 80px);
+  padding: 0 var(--pad-x);
+}
+
+/* --- Inner container --- */
+.inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+}
+
+/* --- Tag pills --- */
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 7px 16px;
+  border: 1px solid var(--beige);
+  border-radius: 100px;
+  color: var(--warm-brown);
+  transition: background var(--dur-fast) var(--ease),
+              color var(--dur-fast) var(--ease),
+              border-color var(--dur-fast) var(--ease);
+}
+
+.tag:hover {
+  background: var(--warm-brown);
+  color: var(--white);
+  border-color: var(--warm-brown);
+}
+
+/* --- Check list --- */
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 40px;
+}
+
+.check-list li {
+  font-size: 14px;
+  color: rgba(44, 36, 32, 0.75);
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(44, 36, 32, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.check-list li::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237A8C6E' stroke-width='2'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.check-list--light li {
+  color: rgba(253, 250, 246, 0.8);
+  border-bottom-color: rgba(253, 250, 246, 0.1);
+}
+
+.check-list--light li::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C4A882' stroke-width='2'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+}
