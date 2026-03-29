@@ -324,3 +324,216 @@ input, textarea {
 .btn--full {
   width: 100%;
 }
+
+/* ============================================================
+   PART 4 — NAVIGATION & MOBILE MENU
+   ============================================================ */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  padding: 26px 0;
+  transition: padding var(--dur) var(--ease),
+              background var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease);
+}
+
+.nav--scrolled {
+  padding: 14px 0;
+  background: rgba(247, 243, 236, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(44, 36, 32, 0.08);
+}
+
+.nav__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* Logo */
+.nav__logo {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  letter-spacing: 0.01em;
+  transition: color var(--dur-fast);
+  flex-shrink: 0;
+}
+
+.nav--scrolled .nav__logo {
+  color: var(--charcoal);
+}
+
+.nav__logo-mark {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+/* Desktop links */
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav__links a {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(253, 250, 246, 0.82);
+  position: relative;
+  transition: color var(--dur-fast);
+}
+
+.nav__links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width var(--dur-fast) var(--ease);
+}
+
+.nav__links a:hover { color: var(--white); }
+.nav__links a:hover::after { width: 100%; }
+
+.nav--scrolled .nav__links a {
+  color: rgba(44, 36, 32, 0.7);
+}
+
+.nav--scrolled .nav__links a:hover {
+  color: var(--charcoal);
+}
+
+/* Action icons */
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav__icon-btn {
+  color: rgba(253, 250, 246, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  transition: color var(--dur-fast);
+  position: relative;
+}
+
+.nav__icon-btn:hover { color: var(--white); }
+
+.nav--scrolled .nav__icon-btn {
+  color: rgba(44, 36, 32, 0.7);
+}
+
+.nav--scrolled .nav__icon-btn:hover {
+  color: var(--charcoal);
+}
+
+/* Cart count badge */
+.nav__cart-count {
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  background: var(--warm-brown);
+  color: var(--white);
+  font-size: 9px;
+  font-weight: 600;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.nav__cart-count.bump {
+  transform: scale(1.45);
+}
+
+/* Hamburger */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px;
+}
+
+.nav__hamburger span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: rgba(253, 250, 246, 0.82);
+  transition: transform var(--dur-fast) var(--ease),
+              opacity var(--dur-fast),
+              background var(--dur-fast);
+}
+
+.nav--scrolled .nav__hamburger span {
+  background: var(--charcoal);
+}
+
+.nav__hamburger.open span:first-child {
+  transform: translateY(3.5px) rotate(45deg);
+}
+
+.nav__hamburger.open span:last-child {
+  transform: translateY(-3.5px) rotate(-45deg);
+}
+
+/* Mobile nav overlay */
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  background: var(--cream);
+  z-index: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.mobile-nav.open {
+  transform: translateX(0);
+}
+
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.mobile-nav a {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 7vw, 42px);
+  font-weight: 400;
+  color: var(--charcoal);
+  letter-spacing: -0.01em;
+  transition: color var(--dur-fast);
+}
+
+.mobile-nav a:hover {
+  color: var(--warm-brown);
+}
