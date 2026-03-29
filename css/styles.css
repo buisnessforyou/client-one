@@ -209,3 +209,118 @@ input, textarea {
 .check-list--light li::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C4A882' stroke-width='2'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
 }
+
+/* ============================================================
+   PART 3 — BUTTONS
+   ============================================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: background var(--dur-fast) var(--ease),
+              color var(--dur-fast) var(--ease),
+              border-color var(--dur-fast) var(--ease),
+              transform var(--dur-fast) var(--ease),
+              box-shadow var(--dur-fast) var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shimmer layer on hover */
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.12) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.5s var(--ease);
+  pointer-events: none;
+}
+
+.btn:hover::after {
+  transform: translateX(100%);
+}
+
+/* Primary — dark fill */
+.btn--primary {
+  background: var(--charcoal);
+  color: var(--white);
+  border: 1px solid var(--charcoal);
+}
+
+.btn--primary:hover {
+  background: var(--deep-brown);
+  border-color: var(--deep-brown);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(44, 36, 32, 0.22);
+}
+
+.btn--primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Ghost — transparent with dark border */
+.btn--ghost {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(253, 250, 246, 0.45);
+}
+
+.btn--ghost:hover {
+  border-color: var(--white);
+  background: rgba(253, 250, 246, 0.08);
+}
+
+/* Outline light — for dark backgrounds */
+.btn--outline-light {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(253, 250, 246, 0.4);
+}
+
+.btn--outline-light:hover {
+  background: rgba(253, 250, 246, 0.1);
+  border-color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Underline text link style */
+.btn--underline {
+  padding: 2px 0;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  color: var(--warm-brown);
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  background: transparent;
+}
+
+.btn--underline:hover {
+  color: var(--charcoal);
+}
+
+.btn--underline::after {
+  display: none;
+}
+
+/* Large modifier */
+.btn--lg {
+  padding: 17px 48px;
+  font-size: 13px;
+}
+
+/* Full width modifier */
+.btn--full {
+  width: 100%;
+}
