@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CozyNest — Where Rest Becomes Ritual</title>
+  <meta name="description" content="Luxury eco-conscious home goods crafted for deep rest. Organic pillows, throw blankets, bamboo eye masks, and soy candles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <svg class="nav__logo-mark" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0L8.56 5.44L14 7L8.56 8.56L7 14L5.44 8.56L0 7L5.44 5.44L7 0Z" fill="currentColor"/></svg>
+        CozyNest
+      </a>
+      <ul class="nav__links">
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#sustainability">Sustainability</a></li>
+        <li><a href="#journal">Journal</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__icon-btn" aria-label="Search">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav__icon-btn nav__cart-btn" id="cartBtn" aria-label="Cart">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="nav__cart-count" id="cartCount">0</span>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#sustainability">Sustainability</a></li>
+      <li><a href="#journal">Journal</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <p class="eyebrow eyebrow--gold fade-up" data-delay="0">Eco-Conscious Luxury</p>
+      <h1 class="hero__headline fade-up" data-delay="120">Where Rest<br><em>Becomes Ritual</em></h1>
+      <p class="hero__sub fade-up" data-delay="240">Handcrafted goods for the art of slowing down.<br>Made with intention. Designed for deep rest.</p>
+      <div class="hero__ctas fade-up" data-delay="360">
+        <a href="#collection" class="btn btn--primary">Explore Collection</a>
+        <a href="#story" class="btn btn--ghost">Our Philosophy</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <div class="trustbar">
+    <div class="trustbar__inner">
+      <div class="trustbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Certified Organic
+      </div>
+      <div class="trustbar__sep"></div>
+      <div class="trustbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Ethically Sourced
+      </div>
+      <div class="trustbar__sep"></div>
+      <div class="trustbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.5 2v6h6M21.5 22v-6h-6"/><path d="M22 11.5A10 10 0 0 0 3.2 7.2M2 12.5a10 10 0 0 0 18.8 4.2"/></svg>
+        Carbon Neutral
+      </div>
+      <div class="trustbar__sep"></div>
+      <div class="trustbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        Free Shipping over $75
+      </div>
+      <div class="trustbar__sep"></div>
+      <div class="trustbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        Crafted in Small Batches
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BRAND STORY ===== -->
+  <section class="story" id="story">
+    <div class="story__inner">
+      <div class="story__visual reveal-left">
+        <div class="story__img-frame">
+          <img src="https://picsum.photos/seed/cozyhome1/680/860" alt="Cozy home interior" loading="lazy" />
+        </div>
+        <div class="story__stat">
+          <span class="story__stat-num">2018</span>
+          <span class="story__stat-label">Founded with purpose</span>
+        </div>
+      </div>
+      <div class="story__content reveal-right">
+        <p class="eyebrow">Our Philosophy</p>
+        <h2 class="section-title">Rest is not a luxury —<br><em>it is a necessity.</em></h2>
+        <p class="story__body">We started CozyNest with a single belief: the way you rest shapes the life you live. In a world moving faster than ever, we create a haven — products that slow you down, wrap you in warmth, and remind you that stillness is sacred.</p>
+        <p class="story__body">Every piece is made from responsibly sourced materials, crafted with the care of artisans who believe what touches your skin should be as good for the earth as it is for you.</p>
+        <div class="story__tags">
+          <span class="tag">Organic Cotton</span>
+          <span class="tag">Recycled Fibres</span>
+          <span class="tag">Bamboo Derived</span>
+          <span class="tag">Soy-Based Wax</span>
+        </div>
+        <a href="#" class="btn btn--underline">Read Our Full Story →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COLLECTION ===== -->
+  <section class="collection" id="collection">
+    <div class="section-header reveal">
+      <p class="eyebrow">The Collection</p>
+      <h2 class="section-title">Curated for Deep Rest</h2>
+      <p class="section-sub">Each piece designed to transform your space into a sanctuary.</p>
+    </div>
+
+    <div class="products">
+
+      <!-- Pillow -->
+      <article class="product-card reveal" data-delay="0">
+        <div class="product-card__img-wrap">
+          <img src="https://picsum.photos/seed/pillow99/600/720" alt="The Cloud Nine Pillow" loading="lazy" />
+          <div class="product-card__hover-cta">
+            <button class="quick-add" data-name="The Cloud Nine Pillow" data-price="89">Add to Cart</button>
+          </div>
+          <span class="badge">New</span>
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__meta">
+            <span class="product-cat">Pillows</span>
+            <span class="product-stars">★★★★★ <em>(148)</em></span>
+          </div>
+          <h3 class="product-name">The Cloud Nine Pillow</h3>
+          <p class="product-desc">Organic cotton shell. GOTS-certified fill. Engineered for spinal support and uninterrupted sleep.</p>
+          <div class="product-card__foot">
+            <span class="product-price">$89</span>
+            <a href="#" class="product-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Throw Blanket -->
+      <article class="product-card reveal" data-delay="80">
+        <div class="product-card__img-wrap">
+          <img src="https://picsum.photos/seed/throwblanket7/600/720" alt="The Terra Throw" loading="lazy" />
+          <div class="product-card__hover-cta">
+            <button class="quick-add" data-name="The Terra Throw" data-price="145">Add to Cart</button>
+          </div>
+          <span class="badge badge--brown">Bestseller</span>
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__meta">
+            <span class="product-cat">Throws</span>
+            <span class="product-stars">★★★★★ <em>(312)</em></span>
+          </div>
+          <h3 class="product-name">The Terra Throw</h3>
+          <p class="product-desc">100% organic cotton. Woven with intention. A throw so soft, you'll forget the world outside.</p>
+          <div class="product-card__foot">
+            <span class="product-price">$145</span>
+            <a href="#" class="product-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Fleece Blanket -->
+      <article class="product-card reveal" data-delay="160">
+        <div class="product-card__img-wrap">
+          <img src="https://picsum.photos/seed/fleece22/600/720" alt="The Alpine Fleece" loading="lazy" />
+          <div class="product-card__hover-cta">
+            <button class="quick-add" data-name="The Alpine Fleece" data-price="119">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__meta">
+            <span class="product-cat">Blankets</span>
+            <span class="product-stars">★★★★★ <em>(207)</em></span>
+          </div>
+          <h3 class="product-name">The Alpine Fleece</h3>
+          <p class="product-desc">Made from 100% recycled plastic bottles. Impossibly soft, responsibly made — warmth without compromise.</p>
+          <div class="product-card__foot">
+            <span class="product-price">$119</span>
+            <a href="#" class="product-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Eye Mask -->
+      <article class="product-card reveal" data-delay="240">
+        <div class="product-card__img-wrap">
+          <img src="https://picsum.photos/seed/eyemask55/600/720" alt="The Dusk Eye Mask" loading="lazy" />
+          <div class="product-card__hover-cta">
+            <button class="quick-add" data-name="The Dusk Eye Mask" data-price="48">Add to Cart</button>
+          </div>
+          <span class="badge badge--green">Limited</span>
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__meta">
+            <span class="product-cat">Sleep Essentials</span>
+            <span class="product-stars">★★★★★ <em>(89)</em></span>
+          </div>
+          <h3 class="product-name">The Dusk Eye Mask</h3>
+          <p class="product-desc">Silky-smooth bamboo. Weighted for total darkness. Infused with lavender for a sleep ritual you'll never skip.</p>
+          <div class="product-card__foot">
+            <span class="product-price">$48</span>
+            <a href="#" class="product-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candle Set -->
+      <article class="product-card reveal" data-delay="320">
+        <div class="product-card__img-wrap">
+          <img src="https://picsum.photos/seed/candles88/600/720" alt="The Ember Collection" loading="lazy" />
+          <div class="product-card__hover-cta">
+            <button class="quick-add" data-name="The Ember Collection" data-price="72">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__meta">
+            <span class="product-cat">Ambiance</span>
+            <span class="product-stars">★★★★★ <em>(176)</em></span>
+          </div>
+          <h3 class="product-name">The Ember Collection</h3>
+          <p class="product-desc">Three soy wax candles, hand-poured in small batches. Scents: Cedarwood &amp; Sage, Warm Amber, Midnight Vanilla.</p>
+          <div class="product-card__foot">
+            <span class="product-price">$72</span>
+            <a href="#" class="product-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="collection__cta reveal">
+      <a href="#" class="btn btn--primary">Shop All Products</a>
+    </div>
+  </section>
+
+  <!-- ===== SPOTLIGHT: TERRA THROW ===== -->
+  <section class="spotlight">
+    <div class="spotlight__inner spotlight__inner--flip">
+      <div class="spotlight__visual reveal-left">
+        <img src="https://picsum.photos/seed/throwdetail3/760/880" alt="The Terra Throw detail" loading="lazy" />
+      </div>
+      <div class="spotlight__content reveal-right">
+        <p class="eyebrow">Spotlight</p>
+        <h2 class="section-title">The Terra Throw<br><em>Bestseller</em></h2>
+        <p class="spotlight__body">Woven from 100% GOTS-certified organic cotton, The Terra Throw is the result of two years in development. We worked with a family-run mill to perfect a weave that balances softness with breathability — warm enough for winter, light enough for summer.</p>
+        <ul class="check-list">
+          <li>GOTS-Certified Organic Cotton</li>
+          <li>Woven at Fair Trade certified mills</li>
+          <li>Available in 6 earth-toned colours</li>
+          <li>Machine washable — stays soft wash after wash</li>
+        </ul>
+        <a href="#" class="btn btn--primary">Shop The Terra Throw — $145</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPOTLIGHT: EMBER COLLECTION ===== -->
+  <section class="spotlight spotlight--dark">
+    <div class="spotlight__inner">
+      <div class="spotlight__content reveal-left">
+        <p class="eyebrow eyebrow--gold">Spotlight</p>
+        <h2 class="section-title section-title--light">The Ember<br><em>Collection</em></h2>
+        <p class="spotlight__body spotlight__body--light">Three hand-poured soy wax candles, each with a distinct scent crafted to evoke deep calm. 60+ hour burn time per candle. Free from parabens, sulfates, and synthetic fragrances.</p>
+        <ul class="check-list check-list--light">
+          <li>100% pure soy wax — clean burn</li>
+          <li>Cotton wicks — no lead, no zinc</li>
+          <li>Hand-poured in our Vancouver studio</li>
+          <li>60+ hour burn time per candle</li>
+        </ul>
+        <a href="#" class="btn btn--outline-light">Shop The Ember Collection — $72</a>
+      </div>
+      <div class="spotlight__visual reveal-right">
+        <img src="https://picsum.photos/seed/candledetail5/760/880" alt="The Ember Collection" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MATERIALS ===== -->
+  <section class="materials">
+    <div class="section-header reveal">
+      <p class="eyebrow">The Craft</p>
+      <h2 class="section-title">Materials That Matter</h2>
+      <p class="section-sub">We choose every fibre, every thread, every ingredient with intention.</p>
+    </div>
+    <div class="materials__grid">
+      <div class="mat-card reveal" data-delay="0">
+        <div class="mat-card__icon">
+          <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1"/><path d="M28 12 C18 18 13 28 18 40 C23 34 33 34 38 40 C43 28 38 18 28 12Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M28 12 L28 40" stroke="currentColor" stroke-width="1" stroke-dasharray="2 3"/></svg>
+        </div>
+        <h3>Organic Cotton</h3>
+        <p>GOTS-certified, grown without synthetic pesticides. Softer on skin, lighter on the earth.</p>
+      </div>
+      <div class="mat-card reveal" data-delay="80">
+        <div class="mat-card__icon">
+          <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1"/><path d="M18 42 L21 18 L28 28 L35 18 L38 42" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Bamboo</h3>
+        <p>Naturally antimicrobial, grown without irrigation or pesticides. The world's most renewable textile.</p>
+      </div>
+      <div class="mat-card reveal" data-delay="160">
+        <div class="mat-card__icon">
+          <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1"/><path d="M18 34 C18 24 22 16 28 16 C34 16 38 24 38 34 L35 37 L31 30 L28 37 L25 30 L21 37 Z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <h3>Recycled Fibres</h3>
+        <p>Our fleece is made from post-consumer plastic bottles — each blanket repurposes up to 50 bottles.</p>
+      </div>
+      <div class="mat-card reveal" data-delay="240">
+        <div class="mat-card__icon">
+          <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1"/><ellipse cx="28" cy="37" rx="10" ry="5" stroke="currentColor" stroke-width="1.5"/><path d="M18 37 L20 24 L28 16 L36 24 L38 37" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <h3>Soy Wax</h3>
+        <p>100% natural, sustainably grown soy. Burns cleaner and longer than paraffin — better air, better home.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="section-header reveal">
+      <p class="eyebrow">Voices</p>
+      <h2 class="section-title">What Our Community Says</h2>
+    </div>
+    <div class="testimonials__viewport">
+      <div class="testimonials__track" id="testimTrack">
+        <div class="tesm-card">
+          <div class="tesm-card__stars">★★★★★</div>
+          <blockquote>"The Terra Throw has completely changed my evenings. It's the softest thing I've ever felt — and knowing it's ethically made makes it even better."</blockquote>
+          <cite>— Sarah M., Vancouver</cite>
+        </div>
+        <div class="tesm-card">
+          <div class="tesm-card__stars">★★★★★</div>
+          <blockquote>"I bought the Ember Collection as a gift and ended up ordering another set for myself. The Cedarwood &amp; Sage scent is unbelievable. Pure calm in a jar."</blockquote>
+          <cite>— James L., New York</cite>
+        </div>
+        <div class="tesm-card">
+          <div class="tesm-card__stars">★★★★★</div>
+          <blockquote>"The Dusk Eye Mask is worth every penny. I sleep deeper, wake up more rested. The bamboo silk feels incredible against my skin."</blockquote>
+          <cite>— Priya K., London</cite>
+        </div>
+        <div class="tesm-card">
+          <div class="tesm-card__stars">★★★★★</div>
+          <blockquote>"I'm obsessed with the Cloud Nine Pillow. After years of neck pain, this pillow has genuinely changed my mornings. Worth every cent."</blockquote>
+          <cite>— Marcus T., Toronto</cite>
+        </div>
+        <div class="tesm-card">
+          <div class="tesm-card__stars">★★★★★</div>
+          <blockquote>"The Alpine Fleece goes everywhere with me. And the fact it's made from recycled bottles? Incredible craftsmanship with a conscience."</blockquote>
+          <cite>— Emma R., Sydney</cite>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials__controls">
+      <button class="tesm-btn" id="testimPrev" aria-label="Previous">←</button>
+      <div class="tesm-dots" id="testimDots"></div>
+      <button class="tesm-btn" id="testimNext" aria-label="Next">→</button>
+    </div>
+  </section>
+
+  <!-- ===== SUSTAINABILITY ===== -->
+  <section class="sustain" id="sustainability">
+    <div class="sustain__inner reveal">
+      <p class="eyebrow eyebrow--gold">Our Commitment</p>
+      <h2 class="section-title section-title--light">Rest Well,<br><em>Live Lightly.</em></h2>
+      <p class="sustain__body">We believe luxury and responsibility are not opposites. Every CozyNest product is a vote for a slower, cleaner, more intentional world.</p>
+      <div class="sustain__stats">
+        <div class="sustain__stat">
+          <span class="sustain__num">100%</span>
+          <span class="sustain__label">Organic or Recycled Materials</span>
+        </div>
+        <div class="sustain__stat">
+          <span class="sustain__num">50+</span>
+          <span class="sustain__label">Bottles Recycled Per Fleece</span>
+        </div>
+        <div class="sustain__stat">
+          <span class="sustain__num">0</span>
+          <span class="sustain__label">Synthetic Fragrances Used</span>
+        </div>
+        <div class="sustain__stat">
+          <span class="sustain__num">1%</span>
+          <span class="sustain__label">Revenue to Reforestation</span>
+        </div>
+      </div>
+      <a href="#" class="btn btn--outline-light">Our Full Commitment →</a>
+    </div>
+  </section>
+
+  <!-- ===== BUNDLE CTA ===== -->
+  <section class="bundle">
+    <div class="bundle__inner reveal">
+      <p class="eyebrow">Build Your Ritual</p>
+      <h2 class="section-title">The Complete Rest Bundle</h2>
+      <p class="bundle__body">Pair the Cloud Nine Pillow, Terra Throw, Dusk Eye Mask, and Ember Collection for the ultimate sleep sanctuary. Exclusively available as a limited set.</p>
+      <div class="bundle__pricing">
+        <span class="bundle__was">$354</span>
+        <span class="bundle__now">$299</span>
+        <span class="bundle__save">Save $55</span>
+      </div>
+      <a href="#" class="btn btn--primary btn--lg">Shop The Rest Bundle</a>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="newsletter__inner reveal">
+      <p class="eyebrow">Join the Community</p>
+      <h2 class="section-title">The Art of Rest, Delivered.</h2>
+      <p class="newsletter__sub">Wellness rituals, new arrivals, and stories from those who rest well — straight to your inbox. No noise. Just calm.</p>
+      <form class="newsletter__form" id="newsletterForm" novalidate>
+        <input type="email" class="newsletter__input" placeholder="Your email address" required />
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+      <p class="newsletter__fine">No spam. Unsubscribe anytime. We respect your inbox as much as your sleep.</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 0L8.56 5.44L14 7L8.56 8.56L7 14L5.44 8.56L0 7L5.44 5.44L7 0Z" fill="currentColor"/></svg>
+          CozyNest
+        </a>
+        <p class="footer__tagline">Where Rest Becomes Ritual.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Pinterest">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0"/><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/><path d="M8.56 14.69 6 22"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Pillows</a></li>
+            <li><a href="#">Throw Blankets</a></li>
+            <li><a href="#">Fleece Blankets</a></li>
+            <li><a href="#">Eye Masks</a></li>
+            <li><a href="#">Candle Sets</a></li>
+            <li><a href="#">Gift Bundles</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">Care Guide</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 CozyNest. All rights reserved. Crafted with intention.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer__backdrop" id="cartBackdrop"></div>
+    <div class="cart-drawer__panel">
+      <div class="cart-drawer__head">
+        <h3>Your Cart</h3>
+        <button class="cart-drawer__close" id="cartClose" aria-label="Close cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="cart-drawer__items" id="cartItems">
+        <div class="cart-drawer__empty">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <p>Your cart is empty</p>
+          <a href="#collection" class="btn btn--primary">Start Shopping</a>
+        </div>
+      </div>
+      <div class="cart-drawer__foot" id="cartFoot" style="display:none">
+        <div class="cart-drawer__total">
+          <span>Total</span>
+          <span id="cartTotal">$0</span>
+        </div>
+        <button class="btn btn--primary btn--full">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
