@@ -440,6 +440,9 @@ input, textarea {
 
 .nav__icon-btn:hover { color: var(--white); }
 
+/* Cart button — inherits nav__icon-btn, no extra styles needed */
+.nav__cart-btn { position: relative; }
+
 .nav--scrolled .nav__icon-btn {
   color: rgba(44, 36, 32, 0.7);
 }
