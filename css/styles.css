@@ -725,6 +725,11 @@ input, textarea {
   align-items: center;
 }
 
+/* Visual column — needs relative so stat box anchors correctly */
+.story__visual {
+  position: relative;
+}
+
 /* Image frame with offset border accent */
 .story__img-frame {
   position: relative;
@@ -1443,6 +1448,11 @@ input, textarea {
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: clamp(40px, 6vw, 80px);
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__logo {
